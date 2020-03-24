@@ -88,34 +88,37 @@
           <span class="caption text-muted">Being an open source contributor means proactive and voluntary.</span>
           <p>They are proactive as no one asks for it, themselves are those who fix a bug they found, and they are willing to change their own style into the rule of project owner for contribution.</p>
 
-          <p>As well as they are volutary since most of them are not officially hired for the maintenance of the project. No one pays for it, the contribution takes contributors' own private time which is the most precious resource of human being, usually there is nothing left but self-satisfaction as an individual commit is going to be buried by hundreds or thousands of others, and the work is for other people who will go through the same bug.</p>
+          <p>As well as they are volutary since most of them are not hired for the maintenance of the project. No one pays for it but the devotion takes contributors' own private time which is the most precious resource of human being. Usually, there is nothing left but self-satisfaction as an individual commit is going to be buried by hundreds or thousands of others. The work is for the sake of other people who will face the same bug.</p>
 
           <h2 class="section-heading">Get into the situation</h2>
 
-          <p>Let's assume that you already have enough spirit of charity. Prerequisite fulfilled. While you are using one of the open source library or something, you have encountered an issue that it does not work as intended. In this case you are given 3 choices. You may <i><b>choose another open source</b></i>, <i><b>report the bug to the maintainers of the project</b></i>, or <i><b>start debugging of the issue</b></i>. The choices are given in the similar way when you read some 'getting started' document and found a typo or something wrong. You may <i><b>ignore it</b></i>, <i><b>report to the maintainers</i></b>, or <i><b>fix it on your own.</i></b></p>
+          <p>Let's assume that you already have enough spirit of charity. Prerequisite fulfilled. While you are using one of the open source library or something, you have encountered an issue that it does not work as intended. In this case you are given 3 choices. You may <i><b>switch to another open source</b></i>, <i><b>report the bug to the maintainers of the project</b></i>, or <i><b>start debugging of the issue</b></i>. When you read a document like 'Getting Started' and found a typo or something wrong, the choices are given in the similar way. You may <i><b>ignore it</b></i>, <i><b>report to the maintainers</i></b>, or <i><b>fix it on your own.</i></b></p>
           <a>
             <center><img class="img-fluid" src="../img/oss-3ways.jpg" alt="3 ways to choose"></center>
           </a>
 
-          <p>For both situation, the roads to the contributor are the last ones, though reporting a bug can also be regarded as contribution in a broader perspective. Somehow the contribution would involve the reporting step.</p>
+          <p>For both situation, the roads to the contributor are the last ones, though reporting a bug could also be regarded as contribution in a broader perspective. Somehow the contribution would go through the reporting step.</p>
 
-          <a href="#">
+          <a>
             <center><img class="img-fluid" src="../img/oss-patchwork-process.jpg" alt=""></center>
           </a>
           <span class="caption text-muted">Patch work process</span>
 
           <h2 class="section-heading">How to?</h2>
 
-          <p>Mostly, the contribution begins with reading CONTRIBUTION file. That kind of a file or a section elaborates step-by-step instruction and rules to do contribution. You will submit a bug report to the bug tracking system or via email to the group of maintainers as the guide document. </p>
+          <p>Mostly, the contribution begins with reading CONTRIBUTION file. That kind of a file or a section elaborates step-by-step instruction and rules to do contribution. After reading through it, you will submit a bug report to its designated bug tracking system, such a s Bugzilla or Jira, or send email to the group of maintainers as specified in the document.</p>
 
+          <p>At this point in time there is much possibility that your report is treated as NOT A BUG. Don't be disappointed. This is quite natural that the project owner is being defensive. It is not always easy to understand the intention of an author behind the code so the one you think it is a malfunction can be an operation by design. If you still think it is a bug, you need to convince the person in charge of the project or its module. I'd say the contribution process is full of debate, taking much more portion than code work sometimes.
+          <a>
+            <center><img class="img-fluid" src="../img/oss-debate.jpg" alt="debate with a maintainer"></center>
+          </a>
 
-          <p>A few years ago, I visited Japan for travel. I spoke English on my first day and felt huge frustration in communication. So I spent that night to refresh my knowledge in Japanese which I studied for 4 years during high school and university. It was not that difficult as I felt like it was yet alive in my body and brain. From next day, I had no problem.</p>
+          <p>If the bug is recognized as a problem by project maintainers, you may wait for them to resolve the issue or start debugging by yourself and make a fix. You may also post the code snippet to the bug reporting system as a draft telling them you have an idea for the fix. If you manage to solve the issue by your code work, you may submit the code to the source code management system which should be described in the CONTRIBUTION file. Again, this process involves discussion on the approach and the method. The maintainers may become more conservative during the review stage. This is also natural. To claim a bug and make a fix for it means the current operation is going to change to work in a different way, which may have side effects on its relevant functions. Many documents including <a href="https://devguide.python.org/pullrequest/#making-good-prs" target="_blank">Python Developer's Guide</a> have stated this point.</p>
 
-          <p>Last year, I went business trip to Shenzhen, China. I took an Elementary Chinese class for 3 months more than 5 years ago. Since business language was English there were no problem at work. But there were always problems elsewhere. I was not able to come back to my hotel because taxi driver did not understand English name of my hotel and I did not know how to pronounce the name in Chinese. So, simply I learnt it. It was definately easier than when I studied Japanese not because Chinese is easier than Japanese but because I am trained learning a new language. With the similarity in vocabulary I can see that there are something common that accelerate the progress. Anyway, I had no problem from next day, on coming back to the hotel, at least.</p>
+          <blockquote class="blockquote">"Put yourself in the shoes of someone whose code will be broken by the change(s) introduced by the pull request. It is quite likely that any change made will break someone's code, so you need to have a good reason to make a change as you will be forcing someone to update their code."</blockquote>
 
-          <p>My point is, language is not a barrier to me. It just needs a couple of months to use, that's it. If I come across a new (key)word, I just go open a dictionary/search google. This takes tiny fraction of my time and won't repeat more than 5 times, from my experience I'm sure of that.</p>
-
-          <p>Language is not a problem to me. I am accustomed to heterogeneity. And fortunately, I like a new challenge.</p>
+          <p>In the review stage, maintainers or CI/CD systems will check if your code contains any violations against the project's coding convention, verify the fix is working as its purpose, and perform the build and the unit tests. Once it is revealed everything is fine, then all you need to do is done. As a last turn, they will set a scope of the branches or versions for the application of the patch and merge it.</p>
+          <p>And you? Gratitude and Congratulations. You've become a contributor of the project who makes this software world better together.</p>
 
         </div>
       </div>
@@ -131,31 +134,31 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/siwon-kang-67931a60/" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/kkangshawn">
+              <a href="https://github.com/kkangshawn" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
+            <li class="list-inline-item">
+              <a href="skype:kkangshawn?call" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-skype fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; kkangshawn 2019</p>
+          <p class="copyright text-muted">Copyright &copy; kkangshawn 2019-2020</p>
         </div>
       </div>
     </div>
